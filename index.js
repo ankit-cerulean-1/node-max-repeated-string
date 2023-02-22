@@ -5,7 +5,7 @@ const app = require('express')();
  * Input: List of Elements
  * Output: Most Repeated String in Array
  */
-var getLargestString = (req, res) => {
+var getMaxRepeatedString = (req, res) => {
   let input = [
       'fan',
       'table',
@@ -15,7 +15,7 @@ var getLargestString = (req, res) => {
       'computer',
       'table',
     ],
-    output = 'Display String with Maximum repeated in Array';
+    output = 'Display String with Maximum repeated count in Array';
 
   /**
    * Write down your code here
@@ -26,7 +26,7 @@ var getLargestString = (req, res) => {
   res.send('<h3>' + output + '</h3>');
 };
 
-app.get('/', getLargestString);
+app.get('/', getMaxRepeatedString);
 
 app.listen(3000, () => {
   console.log('Started listening');
