@@ -15,11 +15,14 @@ var getLargestString = (req, res) => {
       'computer',
       'table',
     ],
-    output = 'Display String with Maximum repeated count in Array';
+    output = 'Display String with Maximum repeated in Array';
 
-  /** Write down your code here */
+  /**
+   * Write down your code here
+   * */
 
   /** Logic Ends */
+
   res.send('<h3>' + output + '</h3>');
 };
 
